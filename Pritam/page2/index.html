@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chutney Papad & Pickle</title>
+    <link rel="icon" type="image/x-icon"
+        href="http://127.0.0.1:5502/Haldiram-Clone/aman/homepage/assets/Haldiram_Logo-9GN.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://db.onlinewebfonts.com/c/c815be296ee18689fbee7a8c142aae46?family=Coconat" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="nav-wrapper">
+
+                <a href="/" class="logo">
+                    <img src="http://127.0.0.1:5502/Haldiram-Clone/aman/homepage/assets/Haldiram_Logo-9GN.webp"
+                        alt="Haldiram's" width="180" height="60">
+                </a>
+
+                <div class="nav-content">
+
+                    <div class="top-row">
+                        <div class="mode-section">
+                            <span class="mode-label">Mode:<br></span>
+                            <span class="delivery-text">Delivery</span>
+                        </div>
+
+                        <div class="top-right">
+                            <button class="location-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 21s-8-4.5-8-11a8 8 0 1 1 16 0c0 6.5-8 11-8 11z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Your Location...
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            
+                            <div class="search-container">
+
+                                <button class="search-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <path d="M21 21l-4.35-4.35" />
+                                    </svg>
+                                </button> <button placeholder="Search 200+ products" class="search-input">Search 200+
+                                    products</button>
+                            </div>
+
+                            <button class="cart-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                            </button>
+
+                            <div class="nav-end">
+
+                                <button class="menu-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="3" y1="12" x2="21" y2="12" />
+                                        <line x1="3" y1="6" x2="21" y2="6" />
+                                        <line x1="3" y1="18" x2="21" y2="18" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="bottom-row">
+                        <ul class="categories">
+                            <li class="category-item">
+                                <a href="/savouries" class="category-link">
+                                    Savouries
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="savouries">
+
+                                    <div class="mega-menu-content">
+
+                                        <div class="mega-menu-header">
+                                            <h2>Savouries</h2>
+                                            <p>Indulge in our wide assortment of namkeens, from spicy flavours to nut
+                                                mixtures, that are sure to satisfy your cravings.</p>
+                                            <a href="/savouries" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+                                            <a href="/healthy-snacking" class="category-card healthy-snacking">
+                                                <div class="category-image">
+                                                    <img src="./assets/Healthy-Snacking_5.webp"
+                                                        alt="Healthy Snacking" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Healthy Snacking</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/namkeens" class="category-card namkeens">
+                                                <div class="category-image">
+                                                    <img src="./assets/Namkeens_5.webp" alt="Namkeens" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Namkeens</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/chai-time-snacks" class="category-card chai-time">
+                                                <div class="category-image">
+                                                    <img src="./assets/Chai-Time-Snacks_4.webp"
+                                                        alt="Chai Time Snacks" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Chai Time Snacks</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="/mithai" class="category-link">
+                                    Mithai
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="mithai">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-header">
+                                            <h2>Mithai</h2>
+                                            <p>Experience the nostalgia and rich flavours of India with our scrumptious
+                                                range of sweets, handcrafted to perfection and delivered straight to
+                                                your doorstep.</p>
+                                            <a href="/mithai" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+                                            <a href="/Ladoo_1.html" class="category-card ladoo">
+                                                <div class="category-image">
+                                                    <img src="./assets/Ladoo_1.webp" alt="Ladoo" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Ladoo</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/Premium-Sweets_1.html" class="category-card premium-sweets">
+                                                <div class="category-image">
+                                                    <img src="./assets/Premium-Sweets_1.webp" alt="Premiun Sweets" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Premium Sweets</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/Ghee-Sweets_1.html" class="category-card ghee-sweets">
+                                                <div class="category-image">
+                                                    <img src="./assets/Ghee-Sweets_1.webp" alt="Ghee sweets" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Ghee Sweets</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="/bakery" class="category-link">
+                                    Bakery Cookies and Chocolates
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="bakery">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-header">
+                                            <h2>Bakery Cookies and Chocolates</h2>
+                                            <p>Delight your taste buds with our heavenly treats! Indulge in artisanal
+                                                bakery delights, melt-in-your-mouth chocolates, and scrumptious cookies.
+                                            </p>
+                                            <a href="/bakery" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+                                            <a href="/chocolate" class="category-card chocolate">
+                                                <div class="category-image">
+                                                    <img src="./assets/Chocolates-_-Confectionery_1.webp"
+                                                        alt="Chocolates" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Chocolates and Confectionaries</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/cookies" class="category-card cookies">
+                                                <div class="category-image">
+                                                    <img src="./assets/Cookies_-Khari-_-Rusks_1_1_.webp"
+                                                        alt="Cookies" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Cookies</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="/ready-to-eat" class="category-link">
+                                    Ready To Eat And Frozen
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="ready-to-eat">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-header">
+                                            <h2>Ready To Eat And Frozen</h2>
+                                            <p>Our range of Ready to Eat Curries, Combo and Instant Cups (Poha, Upma
+                                                etc.) is the perfect solution to satisfy your craving for something
+                                                crunchy and delicious on the go.</p>
+                                            <a href="./assets/ready-to-eat" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+
+
+                                            <a href="/heat-eat" class="category-card heat-eat">
+                                                <div class="category-image">
+                                                    <img src="./assets/Heat-_-Eat_1_1_.webp" alt="Heat and Eat" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Heat and Eat</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="/pantry" class="category-link">
+                                    Pantry and Kitchen
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="pantry">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-header">
+                                            <h2>Pantry and Kitchen</h2>
+                                            <p>Discover the heart of your culinary journey with our pantry and kitchen
+                                                essentials. From spices to masalas, breakfast essentials, we have
+                                                everything you need to elevate your cooking and create delicious meals
+                                                with ease.</p>
+                                            <a href="/pantry" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+                                            <a href="/breakfast" class="category-card breakfast">
+                                                <div class="category-image">
+                                                    <img src="./assets/Breakfast-Mixes_1.webp" alt="Breakfast Mixes" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Breakfast Mixes</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                            <a href="/chutney" class="category-card chutney">
+                                                <div class="category-image">
+                                                    <img src="./assets/Chutney_-Papad-and-Pickle_1.webp"
+                                                        alt="Chutney, Papad and Pickle" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Chutney, Papad and Pickle</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="category-item">
+                                <a href="/trail" class="category-link">
+                                    Trail Mixes and Dry Fruits
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </a>
+                                <div class="mega-menu" id="trail">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-header">
+                                            <h2>Trail Mixes and Dry Fruits</h2>
+                                            <p>
+                                                Nourish Your Snacking Journey - Halidram's Trail Mixes and Dry Fruits: A
+                                                Perfect Blend of Health and Taste!</p>
+                                            <a href="/trail" class="view-all">
+                                                View All
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2">
+                                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mega-menu-categories">
+                                            <a href="/dry-fruit" class="category-card dry-fruit">
+                                                <div class="category-image">
+                                                    <img src="./assets/Dry-Fruits_2.webp" alt="Dry Fruit" />
+                                                </div>
+                                                <div class="category-info">
+                                                    <h3>Dry Fruits</h3>
+                                                    <button class="circle-arrow">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2">
+                                                            <path d="M5 12h14M12 5l7 7-7 7" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="nav-end">
+                            <button class="wishlist-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                            </button>
+                            <button class="profile-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div class="prit">
+        <div class="sidebar-product">
+            <div class="left-list">
+                <a style="text-decoration: none; font-size: 20px; color: #922637;font-family: coconat,serif;"
+                    href=>Brackfast Mixes</a>
+                <a style="text-decoration: none; font-size: 20px; color: #922637;font-family: coconat,serif;"
+                    href="">Chutney Papad &
+                    Pickle</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <h3 class="Brackfast-heading-2">Chutney Papad & Pickle</h3>
+            <div class="product-image">
+
+                <!--product 1-->
+                <div class="product-list">
+                    <img src="./assest/art_top-2rK.png" alt="Top Border" class="art-top">
+                    <div class="card-height">
+                        <img class="img" src="./assest/Panjabi Masala Papad.png" alt="">
+                        <h3 style="margin-left: 15px; font-family: satoshi; font-size: 18px;">Panjabi Masala Papad
+                        </h3>
+                        <div class="Rate-detail">
+                            <h2 style="margin-left: 15px; margin-top: 40px;">₹140.00</h2>
+                            <div class="card-button">
+                                <button class="add-button">+</button>
+                                <button class="heart-button">❤️</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assest/art_bottom-d3S.png" alt="Bottom Border" class="art-bottom">
+                </div>
+                <!--product 2-->
+                <div class="product-list">
+                    <img src="./assest/art_top-2rK.png" alt="Top Border" class="art-top">
+                    <div class="card-height">
+                        <img class="img" src="./assest/Papad Medium Masala.png" alt="">
+                        <h3 style="margin-left: 15px;">Papad Medium Masala</h3>
+                        <div class="Rate-detail">
+                            <h2 style="margin-left: 15px; margin-top: 40px;">₹170.00</h2>
+                            <div class="card-button">
+                                <button class="add-button">+</button>
+                                <button class="heart-button">❤️</button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assest/art_bottom-d3S.png" alt="Bottom Border" class="art-bottom">
+                </div>
+                <!--product 3-->
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="discover-product">
+        <div class="avilable-items">
+            <img class="available-product" src="./assest/SAVORIES.png" alt="">
+            <img class="available-product" src="./assest/MITHAI.png" alt="">
+            <img class="available-product" src="./assest/BAKERIES.png" alt="">
+            <img class="available-product" src="./assest/READY-TO-EAT.png" alt="">
+            <img class="available-product" src="./assest/PANTRY & KITCHEN.png" alt="">
+        </div>
+    </div>
+    <div class="description-heading">
+        <h3>Chutney, Papad & Pickle – Taste of Authentic India at Haldiram's</h3><br>
+        <p>Looking to add more flavor to your meals?</p><br>
+        <p>Bring home Haldiram’s delightful range of Indian chutneys, crispy papads, and tangy pickles to make
+            your dining experience more flavorful. Whether you are preparing any traditional Indian feast or a
+            simple everyday meal, our range of authentic Indian chutneys, papads, and pickles will bring
+            traditional flavors to your table.</p>
+        <br>
+
+        <h3>Explore Our Collection of Chutney, Papad & Pickle</h3><br>
+        <p><b>Chutney:</b>Browse through our selection of authentic Indian chutneys and enjoy a punch
+            of flavor.</p>
+        <p>Pickles:</p>Our pickles are made using traditional recipes passed down through
+        generations. Also, our range of Indian pickles is made with high-quality ingredients and
+        traditional Indian spices.</p>
+        <b>Papad:</b> Indian meal is incomplete without the crunchy papad. Haldiram’s brings to you
+        delicious flavors of papad that you can enjoy as an appetizer or a side dish.</p><br>
+
+
+        <h3><strong>Why Shop from Haldiram’s?</strong></h3><br>
+        <p>Haldiram’s is a legacy of trust, taste, and quality that spans over decades. Here's what
+            makes us so special:</p><br>
+
+        <p><b>Authentic Taste:</b>Each product captures the rich, authentic flavors of India and takes
+            you back every time you take a bite.</p>
+        <p><b>Quality Ingredients:</b> Products are prepared with the finest ingredients available,
+            sourced with utmost care and processed to maintain their freshness and flavor profile.</p>
+        <p><b>Wide Variety:</b>Be it regional specialties or classic favorites, Haldiram's has a
+            tremendous range of products, which cater to the tastes of every Indian household.</p>
+        <p><b>Availability:</b>You can either shop from our physical stores or place your order online
+            to get your order delivered right to your doorstep.</p><br><br>
+        <p>Shop for the best Indian chutneys, papads, and pickles and enjoy the bold flavors of
+            Haldiram’s!</p>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- Newsletter Banner -->
+        <div class="newsletter-banner">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-content-written">
+                        <h2>With Love, From Haldiram's</h2>
+                        <p>Subscribe to our newsletter for Haldiram's offers.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter Email Id" required>
+                        <button type="submit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <div class="footer-column company-info">
+                        <img src="http://127.0.0.1:5502/Haldiram-Clone/aman/homepage/assets/Haldiram_Logo-9GN.webp"
+                            alt="Haldiram's" class="footer-logo">
+                        <div class="company-details">
+                            <p><b>Haldiram Ethnic Foods Private Limited</b></p>
+                            <p><b>Haldiram Manufacturing Co. Private Limited</b></p>
+                            <p><b>Haldiram Products Private Limited</b></p>
+                            <p><b>Haldiram Marketing Private Limited</b></p>
+                            <address>
+                                <b>B-1 / F-12, Mohan Co-Operative Industrial Estate, Main Mathura Road, Badarpur, South
+                                    Delhi, Delhi,
+                                    110044</b>
+                            </address>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-column">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="./assest/SAVORIES.png">Savouries</a></li>
+                            <li><a href="./assest/MITHAI.png">Mithai</a></li>
+                            <li><a href="./assest/BAKERIES.png">Bakery Cookies and Chocolates</a></li>
+                            <li><a href="./assest/READY-TO-EAT.png">Ready To Eat And Frozen</a></li>
+                            <li><a href="./assest/PANTRY & KITCHEN.png">Pantry And Kitchen</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                            <li><a href="/stores">Find Your Nearest Store</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-column">
+                        <h3>CORPORATE</h3>
+                        <ul>
+                            <li><a href="/about">About us</a></li>
+                            <li><a href="/dealership">Dealership Form</a></li>
+                        </ul>
+
+                        <h3>POLICIES</h3>
+                        <ul>
+                            <li><a href="/shipping">Shipping Policy</a></li>
+                            <li><a href="/returns">Returns & Cancellation</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="footer-bottom">
+                    <p>Follow @Haldirams</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5"
+                                viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#01a1c1"
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#e41111"
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#74C0FC"
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#6d00c7"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
